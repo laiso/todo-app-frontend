@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".nuxt/dist/client",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ {
+      "source": "**",
+      "run": {
+        "serviceId": "frontend",
+        "region": "us-central1"
+      }
+    } ]
+  }
+}
